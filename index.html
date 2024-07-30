@@ -13,6 +13,9 @@
             border: 1px solid black;
             border-radius: 25px;
         }
+        .accordion-button::after {
+            filter: grayscale(100%);
+        }
         .row{
             align-items: center;
             
@@ -36,13 +39,15 @@
             --bs-primary-text-emphasis: #ffffff;
             --bs-primary-bg-subtle: #343434;
         }
-        footer{ 
-    position: fixed ;
-    bottom: 0px;
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    }
+        footer { 
+            position: fixed ;
+            bottom: 0px;
+            width: 100%;
+            height: 40px;
+            left: 0;
+            text-align: center;
+            justify-content: center;
+        }
 
     </style>
 </head>
@@ -76,11 +81,16 @@
                     </div>
                 </div>
             </div>
+         </div>    
             <footer>
                 <p>por <a href="https://github.com/l3l3z1nh4" target="_blank">L3L3Z1nH4</a> para EBAC</p>
             </footer>
     </div>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
